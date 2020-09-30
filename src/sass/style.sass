@@ -1,0 +1,90 @@
+@import "../sass/_variables.sass"
+@import "../../node_modules/bootstrap/scss/bootstrap.scss"
+@import "../sass/_fonts.sass"
+@import "../sass/_icons.sass"
+
+body
+    header
+        nav
+            #logoFlex
+                display: flex
+                flex-direction: column
+                align-items: center
+                margin-left: auto
+                margin-right: auto
+                .navbar-collapse
+                    display: flex
+                    flex-direction: row
+                    align-items:  center
+                    justify-content: space-between
+                    .navbar-nav
+                        margin-top: 20px
+                        .nav-item
+                            a
+                                text-transform: capitalize
+                            .colourSwap
+                                border-radius: 3px
+                                padding: 6px
+                                margin-left: 5px
+                                border: none
+                                border: solid 1px black
+                                &:focus
+                                    outline: none
+                                    border: none
+                            #connect
+                                background-color: #6c757d
+                                color: white
+                                padding: 2px
+                                border: none
+                                &:focus
+                                    outline: none
+                                    border: none
+    section 
+        &:first-of-type
+            background-color: #f3f3f3
+            padding: 25px
+            div
+                &:first-of-type
+                    display: flex
+                    width: 75%
+                    justify-content: center
+                    // align-items: center
+                    margin-left: auto
+                    margin-right: auto
+                    div
+                        &:first-child
+                            display: flex
+                            flex-direction: column
+                            width: 50%
+                            span 
+                                color: red
+                                text-align: left
+                                font-size: larger
+                        &:last-child
+                            margin-top: auto
+                            margin-bottom: auto
+                            width: 50%
+        &:nth-of-type(2)
+            .container
+                margin-top: 50px
+                margin-bottom: 25px
+                .row
+                    .blogItem
+                        .centered
+                            position: absolute
+                            color: white
+                            padding: 50px
+                            padding-top: 0px
+                            padding-bottom: 5px
+                            border-bottom: solid white 2px
+                            top: 25%
+                            left: 50%
+                            transform: translate(-50%, -50%)
+        &:nth-of-type(3)
+            .products
+                margin-top: 25px
+                width: 50%
+                margin: auto
+                text-align: center
+            
+            
