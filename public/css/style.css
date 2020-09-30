@@ -16122,5 +16122,38 @@ body section:nth-of-type(3) .products {
   margin: auto;
   text-align: center;
 }
+body section:nth-of-type(3) .products .container .row .col-xl-2 {
+  width: 300px;
+  margin: 50px;
+  margin-bottom: 20px;
+}
+body section:nth-of-type(3) .products .container .row .col-xl-2 .item {
+  width: 150px;
+  font-size: 12px;
+  font-weight: bolder;
+  margin-top: 5px;
+}
+body section:nth-of-type(3) .products .container .row .col-xl-2 .badge {
+  top: 50%;
+}
+body section:nth-of-type(3) .products .container .row .col-xl-2 .sale {
+  text-decoration: line-through;
+  color: lightgrey;
+}
+body section:nth-of-type(3) .products .container .row .col-xl-2 .price {
+  color: red;
+}
+body section:nth-of-type(3) .products .container .row .col-xl-2 .productImage {
+  margin-right: 15px;
+  width: 175px;
+  height: 125px;
+}
+body section:nth-of-type(4) {
+  background-image: url("../../public/img/cta-bg.jpg");
+}
+body section:nth-of-type(4) .centered .banner2 {
+  display: flex;
+  flex-direction: column;
+}
 
 /*# sourceMappingURL=style.css.map */
