@@ -4,6 +4,7 @@
 @import "../sass/_icons.sass"
 
 body
+    font-family: Poppins
     header
         nav
             #logoFlex
@@ -83,15 +84,13 @@ body
         &:nth-of-type(3)
             .products
                 margin-top: 25px
-                width: 50%
                 margin: auto
                 text-align: center
                 .container
+                    left: 50%
+                    right: 50%
                     .row
-                        .col-xl-2
-                            width: 300px
-                            margin: 50px
-                            margin-bottom: 20px
+                        .col-4
                             .item
                                 width: 150px
                                 font-size: 12px
@@ -104,13 +103,28 @@ body
                                 color: lightgrey
                             .price
                                 color: red
+                                font-size: 12px
                             .productImage
                                 margin-right: 15px
                                 width: 175px
                                 height: 125px
+                            .d-flex
+                                top: 15%
+                                #sale
+                                    border-radius: 50% 
+                                    background-color: red
+                                    color: white
+                                    border: none
+                                    left: 5%
+                                    // top: 15%
+
         &:nth-of-type(4)
+            padding: 400px
             background-image: url("../../public/img/cta-bg.jpg")
             .centered
+                color: white
+                text-align: center
+                font-size: larger
                 .banner2
                     display: flex
                     flex-direction: column

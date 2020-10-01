@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Projet JS</title>
     <link rel="stylesheet" href="./public/css/style.css">
 </head>
 <body>
@@ -64,16 +64,16 @@
     <section id="blog">
         <div class="container">
             <div class="row">
-                <div class="col-xl-4 blogItem">
-                    <span class="centered">Living Room</span>
+                <div class="col-4 blogItem">
+                    <span class="centered w-75 text-center">Living Room</span>
                     <img src="./public/img/services/service-1.jpg" alt="Service1" class="h-50">
                 </div>
-                <div class="col-xl-4 blogItem">
-                    <span class="centered">Sale Items</span>
+                <div class="col-4 blogItem">
+                    <span class="centered  w-75 text-center">Sale Items</span>
                     <img src="./public/img/services/service-2.jpg" alt="Service2" class="h-50">
                 </div>
-                <div class="col-xl-4 blogItem">
-                    <span class="centered">Clothes</span>
+                <div class="col-4 blogItem">
+                    <span class="centered w-75 text-center">Clothes</span>
                     <img src="./public/img/services/slider-3.jpg" alt="Service3" class="h-50">
                 </div>
         </div>
@@ -82,53 +82,82 @@
     <section>
         <div class="products">
             <h6>Recent Products</h6>
-            <div class="container">
+            <div class="container d-flex justify-content-center flex-wrap">
                 <div class="row">
-                    <div class="col-xl-2 d-flex flex-column   align-items-center">
+                    <div class="col-4 mt-2 d-flex flex-column align-items-center">
                         <img class="productImage" src="./public/img/products_mini/product-luxry-sofa.jpg">
-                        <span class="item">Luxury Sofa</span>
-                        <span class="price">$600.00</span>
+                        <div class=" mt-2 d-flex flex-column">
+                            <span class="item">Luxury Sofa</span>
+                            <span class="price">$600.00</span>
+                        </div>
                     </div>
-                    <div class="col-xl-2  d-flex flex-column   align-items-center">
+                    <div class="col-4 mt-2 d-flex flex-column align-items-center">
                         <img class="productImage" src="./public/img/products_mini/product-gloves.jpg">
-                        <div class="d-flex">
-                            <span class="badge badge-danger rounded-circle">Sale!</span>
+                        <div class="d-flex mt-2">
+                            <button id="sale">Sale!</button>
                             <div class="d-flex flex-column">
                                 <span class="item">Leather Gloves</span>
                                 <span class="price"><span class="sale">$34.00</span>   $27.00</span>
                             </div>
                         </div>
                     </div>
-                    <div class="col-xl-2 d-flex flex-column   align-items-center">
+                    <div class="col-4 mt-2 d-flex flex-column align-items-center">
                         <img class="productImage" src="./public/img/products_mini/product-cups.jpg">
-                        <span class="item">Colorful Bowl</span>
-                        <span class="price">$18.00</span>
+                        <div class="mt-2 d-flex flex-column">
+                            <span class="item">Colorful Bowl</span>
+                            <span class="price">$18.00</span>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="container mt-1">
                 <div class="row">
-                    <div class="col-xl-2 d-flex flex-column   align-items-center">
+                    <div class="col-4 mt-2 d-flex flex-column align-items-center">
                         <img class="productImage" src="./public/img/products_mini/product-bag.jpg">
+                        <div class="d-flex mt-2">
+                            <button id="sale">Sale!</button>
+                            <div class="d-flex flex-column">
+                                <span class="item">Women Bag</span>
+                                <span class="price"><span class="sale">$420.00</span>   $350.00</span>
+                            </div>
+                        </div>
                     </div>
-                    <div class="col-xl-2 d-flex flex-column   align-items-center">
+                    <div class="col-4 mt-2 d-flex flex-column align-items-center">
                         <img class="productImage" src="./public/img/products_mini/product-tshitr.jpg">
+                        <div class="mt-2 d-flex flex-column">
+                            <span class="item">Minimal T-shirt</span>
+                            <span class="price">$15.00</span>
+                        </div>
                     </div>
-                    <div class="col-xl-2 d-flex flex-column   align-items-center">
+                    <div class="col-4 mt-2 d-flex flex-column   align-items-center">
                         <img class="productImage" src="./public/img/products_mini/product-plates.jpg">
+                        <div class="mt-2 d-flex flex-column">
+                            <span class="item">Plates Set</span>
+                            <span class="price">$30.00</span>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="container mt-1">
                 <div class="row">
-                    <div class="col-xl-2 d-flex flex-column   align-items-center">
+                    <div class="col-4 mt-2 d-flex flex-column   align-items-center">
                         <img class="productImage" src="./public/img/products_mini/product-modern-sofa.jpg">
+                        <div class="mt-2 d-flex flex-column">
+                            <span class="item">Modern Sofa</span>
+                            <span class="price">$900.00</span>
+                        </div>
                     </div>
-                    <div class="col-xl-2 d-flex flex-column   align-items-center">
+                    <div class="col-4 mt-2 d-flex flex-column   align-items-center">
                         <img class="productImage" src="./public/img/products_mini/product-bed.jpg">
+                        <div class="mt-2">
+                            <div class="mt-2 d-flex flex-column">
+                                <span class="item">Bed Linen</span>
+                                <span class="price">$79.00</span>
+                            </div>
+                        </div>
                     </div>
-                    <div class="col-xl-2 d-flex flex-column   align-items-center">
+                    <div class="col-4 mt-2 d-flex flex-column   align-items-center">
                         <img class="productImage" src="./public/img/products_mini/product-shoes.jpg">
+                        <div class="mt-2 d-flex flex-column">
+                            <span class="item">Minimal shoes</span>
+                            <span class="price">$60.00</span>
+                        </div>
                     </div>
                 </div>
             </div>
