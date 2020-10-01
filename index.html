@@ -8,7 +8,7 @@
 </head>
 <body>
     <header>
-        <nav class="navbar navbar-expand-lg navbar-light bg-white">
+        <nav class="navbar navbar-expand-lg navbar-light">
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
             </button>
@@ -49,15 +49,17 @@
         </nav>
     </header>
     <section id="product">
-        <div>
-            <div>
-                <span>Shop at</span>
-                <img src="./public/img/logo.png" alt="logo" class="w-50">
-                <p>A wonderful serenity has taken possesion of my entire soul, like these sweet morings of spring whiwh I enjoy with my</p>
-                <button class="bg-danger rounded-pill w-25 text-white">SALE ITEMS</button>
-            </div>
-            <div>
-                <img src="./public/img/slider-1.jpg" class="h-70 w-60">
+        <div class="container">
+            <div class="row p-5 pb-3">
+                <div class="col-7 d-flex flex-column">
+                    <span class="text-danger">Shop at</span>
+                    <img src="./public/img/logo.png" alt="logo" class="w-50">
+                    <p>A wonderful serenity has taken possesion of my entire soul, like these sweet morings of spring whiwh I enjoy with my</p>
+                    <button class="bg-danger rounded-pill w-25 text-white">SALE ITEMS</button>
+                </div>
+                <div class="col-5">
+                    <img src="./public/img/slider-1.jpg" class="h-70 w-60">
+                </div>
             </div>
         </div>
     </section>
@@ -168,16 +170,16 @@
                 <button type="button" class="btn btn-danger" id="learn">Learn More</button>
             </div>
     </section>
-    <section class="picCarousel">
+    <section>
         <div class="carBox d-flex flex-column mt-3">
             <h3>Hot products</h3>
-            <div class="">
-                <img src="" alt="" class="carousel_pic">
-                <img src="" alt="" class="carousel_pic">
-                <img src="" alt="" class="carousel_pic">
-                <img src="" alt="" class="carousel_pic">
-                <img src="" alt="" class="carousel_pic">
-                <img src="" alt="" class="carousel_pic">
+            <div class="d-flex" id="images">
+                <img src="./public/img/products/product-bag-2-700x500.jpg" alt="" class="carousel_pic">
+                <img src="./public/img/products/product-bag-700x500.jpg" alt="" class="carousel_pic">
+                <img src="./public/img/products/product-jacket-700x500.jpg" alt="" class="carousel_pic">
+                <img src="./public/img/products/product-shoes-700x500.jpg" alt="" class="carousel_pic">
+                <img src="./public/img/products/product-tshitr-700x500.jpg" alt="" class="carousel_pic">
+                <img src="./public/img/products/product-tshitr-white-700x500.jpg" alt="" class="carousel_pic">
             </div>
             <div class="carButtons">
                 <div class="btns"></div>
@@ -188,22 +190,63 @@
         </div>
     </section>
     <section>
-        <div class="about d-flex">
-            <div class="box">
-
+        <div class="row about mx-auto">
+            <div class="col-4 grey">
+                <div class="aboutBox d-flex flex-column justify-content-center align-items-center">
+                    <i class="far fa-check-circle"></i>
+                    <p><strong>Trusted by 10,000+ customers</strong></p>
+                    <p class="mt-3 text-center">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Libero, quo. Ratione fugiat temporibus sit incidunt!</p>
+                    <button class="boxBtn">learn more</button>
+                </div>
             </div>
-            <div class="box">
-
+            <div class="col-4 red">
+                <div class="aboutBox d-flex flex-column justify-content-center align-items-center text-white">
+                    <i class="far fa-paper-plane"></i>
+                    <p><strong>Trusted by 10,000+ customers</strong></p>
+                    <p class="mt-3 text-center">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Libero, quo. Ratione fugiat temporibus sit incidunt!</p>
+                    <button class="boxBtn" id="redBtn">learn more</button>
+                </div>
             </div>
-            <div class="box">
-
+            <div class="col-4 grey">
+                <div class="aboutBox d-flex flex-column justify-content-center align-items-center">
+                    <i class="far fa-check-circle"></i>
+                    <p><strong>Trusted by 10,000+ customers</strong></p>
+                    <p class="mt-3 text-center">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Libero, quo. Ratione fugiat temporibus sit incidunt!</p>
+                    <button class="boxBtn">learn more</button>
+                </div>
             </div>
         </div>
     </section>
-
-
-
-
+    <footer>
+        <div class="row mx-auto d-flex" id="footr">
+            <div class="col-4 d-flex flex-column">
+                <h6 class="text-white">About Us</h6>
+                <p class="footerText text-warning">Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim fuga, cumque atque eligendi ipsam amet quae ipsa inventore iure harum rerum? Recusandae nemo deserunt laborum?</p>
+            </div>
+            <div class="col-4 posts">
+                <h6 class="text-white">Recent Posts</h6>
+                <ul>
+                    <li> > Hello World</li>
+                    <li> > Wonderful serenity has taken</li>
+                    <li> > In my soul and absorb its power</li>
+                    <li> > I heard the buzz of the little</li>
+                </ul>
+            </div>
+            <div class="col-4 badges">
+                <h6 class="text-white">Tag Cloud</h6>
+                <span class="badge badge-transparent p-3 mr-3 mb-3 border border-white text-warning">business</span>
+                <span class="badge badge-transparent p-3 mr-3 mb-3 border border-white text-warning">confidence</span>
+                <span class="badge badge-transparent p-3 mr-3 mb-3 border border-white text-warning">gadgets</span>
+                <span class="badge badge-transparent p-3 mr-3 mb-3 border border-white text-warning">identity</span>
+                <span class="badge badge-transparent p-3 mr-3 mb-3 border border-white text-warning">logo</span>
+                <span class="badge badge-transparent p-3 mr-3 mb-3 border border-white text-warning">photography</span>
+                <span class="badge badge-transparent p-3 mr-3 mb-3 border border-white text-warning">time</span>
+                <span class="badge badge-transparent p-3 mr-3 mb-3 border border-white text-warning">trips</span>
+                <span class="badge badge-transparent p-3 mr-3 mb-3 border border-white text-warning">work space</span>
+            </div>
+        </div>
+        <p class="text-center">&copy Liam Plummer. All rights reserved.</p>
+    </footer>
     <script src="./public/js/main.js"></script>
 </body>
 </html>

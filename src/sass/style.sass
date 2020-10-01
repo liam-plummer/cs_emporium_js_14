@@ -5,8 +5,11 @@
 
 body
     font-family: Poppins
+    background-color: white
+    margin: 0
     header
         nav
+            background-color: white
             #logoFlex
                 display: flex
                 flex-direction: column
@@ -43,28 +46,27 @@ body
     section 
         &:first-of-type
             background-color: #f3f3f3
-            padding: 25px
-            div
-                &:first-of-type
-                    display: flex
-                    width: 75%
-                    justify-content: center
-                    // align-items: center
-                    margin-left: auto
-                    margin-right: auto
-                    div
-                        &:first-child
-                            display: flex
-                            flex-direction: column
-                            width: 50%
-                            span 
-                                color: red
-                                text-align: left
-                                font-size: larger
-                        &:last-child
-                            margin-top: auto
-                            margin-bottom: auto
-                            width: 50%
+            // div
+            //     &:first-of-type
+            //         display: flex
+            //         width: 75%
+            //         justify-content: center
+            //         // align-items: center
+            //         margin-left: auto
+            //         margin-right: auto
+            //         div
+            //             &:first-child
+            //                 display: flex
+            //                 flex-direction: column
+            //                 width: 50%
+            //                 span 
+            //                     color: red
+            //                     text-align: left
+            //                     font-size: larger
+            //             &:last-child
+            //                 margin-top: auto
+            //                 margin-bottom: auto
+            //                 width: 50%
         &:nth-of-type(2)
             .container
                 margin-top: 50px
@@ -134,10 +136,49 @@ body
                     margin: auto
         &:nth-of-type(5)            
             .carBox
-                margin-left: auto
-            
-        // &:last-of-type
-            
+                h3   
+                    margin: auto
+                    margin-top: 50px
+                    #images
+                        img
+                            width: 150px
+                            height: 100px
+        &:last-of-type
+            .about
+                .grey
+                    background-color: #f3f2f3
+                    padding: 15px
+                .red
+                    background-color: #dd4545
+                    padding: 15px
+                .aboutBox   
+                    i
+                        font-size: larger
+                        margin-bottom: 10px
+                    button 
+                        padding: 5px
+                        border: none
+                        background-color: black
+                        color: white
+                        text-transform: uppercase
+                    #redBtn
+                        background-color: white
+                        color: black
+                    p
+                        font-size: 14px
+    footer
+        background-color: black
+        #footr
+            background-color: #343a40
+            padding: 65px
+            padding-bottom: 0
+            .posts
+                ul
+                    list-style: none
+                    li
+                        color: white 
+
+
             
             
             
