@@ -46,27 +46,6 @@ body
     section 
         &:first-of-type
             background-color: #f3f3f3
-            // div
-            //     &:first-of-type
-            //         display: flex
-            //         width: 75%
-            //         justify-content: center
-            //         // align-items: center
-            //         margin-left: auto
-            //         margin-right: auto
-            //         div
-            //             &:first-child
-            //                 display: flex
-            //                 flex-direction: column
-            //                 width: 50%
-            //                 span 
-            //                     color: red
-            //                     text-align: left
-            //                     font-size: larger
-            //             &:last-child
-            //                 margin-top: auto
-            //                 margin-bottom: auto
-            //                 width: 50%
         &:nth-of-type(2)
             .container
                 margin-top: 50px
@@ -85,7 +64,7 @@ body
                             transform: translate(-50%, -50%)
         &:nth-of-type(3)
             .products
-                margin-top: 25px
+                margin-top: 15px
                 margin: auto
                 text-align: center
                 .container
@@ -139,10 +118,25 @@ body
                 h3   
                     margin: auto
                     margin-top: 50px
-                    #images
-                        img
-                            width: 150px
-                            height: 100px
+                #images
+                    img
+                        width: 200px
+                        height: 150px
+                        margin-right: 10px
+                        &:nth-of-type(5)
+                            display: none
+                        &:nth-of-type(6)
+                            display: none
+                .carButtons
+                    .btns
+                        border-radius: 50%
+                        background-color: white
+                        border: 2px solid black
+                        width: 20px
+                        height: 20px
+                        &:focus
+                            outline: none
+                            background-color: black
         &:last-of-type
             .about
                 .grey
@@ -151,7 +145,8 @@ body
                 .red
                     background-color: #dd4545
                     padding: 15px
-                .aboutBox   
+                .aboutBox  
+                    padding: 15px 
                     i
                         font-size: larger
                         margin-bottom: 10px
