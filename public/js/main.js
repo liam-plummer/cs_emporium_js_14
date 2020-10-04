@@ -53,20 +53,41 @@ btn[2].addEventListener("click", () => {
 // })
 
 let carImgs = document.getElementsByClassName("carousel_pics")
-
+carImgs[0].style.opacity = "1"
+carImgs[1].style.opacity = "1"
+carImgs[2].style.opacity = "1"
+carImgs[3].style.opacity = "1"
+carImgs[4].style.opacity = "1"
+carImgs[5].style.opacity = "1"
 carbtns[0].addEventListener("click", () => {
-    carImgs[0].style.display = "block"
-    carImgs[4].style.display = "none"
+    setTimeout(() => {
+        carImgs[0].style.opacity = "0"
+        carImgs[4].style.opacity = "1"
+        // carImgs[0].style.display = "block"
+        // carImgs[4].style.display = "none"
+    }, 100);
 })
 carbtns[1].addEventListener("click", () => {
-    carImgs[0].style.display = "none"
-    carImgs[4].style.display = "block"
+    setInterval(() => {
+        carImgs[0].style.opacity -= 0.4
+        // carImgs[5].style.opacity += 0.2  
+    }, 100)
+    setTimeout(() => {
+        carImgs[5].style.display = "block"
+        carImgs[0].style.display = "none"
+    }, 800);
 })
-carbtns[2].addEventListener("click", () => {
-    carImgs[1].style.display = "none"
-    carImgs[5].style.display = "block"
-})
-carbtns[3].addEventListener("click", () => {
-    carImgs[2].style.display = "none"
-    carImgs[6].style.display = "block"
-})
+// carbtns[2].addEventListener("click", () => {
+    setInterval(() => {
+        carImgs[0].style.opacity -= 0.4
+    // carImgs[5].style.opacity += 0.2  
+    }, 100)
+    setTimeout(() => {
+        carImgs[5].style.display = "block"
+        carImgs[0].style.display = "none"
+    }, 800);
+// } )
+// carbtns[3].addEventListener("click", () => {
+//     carImgs[2].style.display = "none"
+//     carImgs[6].style.display = "block"
+// })

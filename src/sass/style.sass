@@ -92,10 +92,27 @@ body
                                 font-size: 14px
                             .productImage
                                 margin-right: 15px
-                                width: 175px
+                                // width: 175px
                                 height: 125px
+                                position: relative
                             .d-flex
                                 top: 15%
+                                &:hover::before
+                                    content: "Test"
+                                    background-color: red
+                                    opacity: 0.5
+                                    position: absolute
+                                    z-index: 999
+                                    // height: 50px
+                                    width: 87.5px
+                                    animation: 2s  liam
+                                    @keyframes liam
+                                        from 
+                                            bottom: 10%
+                                            height: 0px
+                                        to
+                                            bottom: 25%
+                                            height: 62.5px  
                                 #sale
                                     border-radius: 50% 
                                     background-color: red
