@@ -16052,6 +16052,9 @@ body {
   background-color: white;
   margin: 0;
 }
+body header {
+  position: relative;
+}
 body header nav {
   background-color: white;
 }
@@ -16062,6 +16065,9 @@ body header nav #logoFlex {
   margin-left: auto;
   margin-right: auto;
 }
+body header nav #logoFlex #logo1 {
+  display: block;
+}
 body header nav #logoFlex .navbar-collapse {
   display: flex;
   flex-direction: row;
@@ -16070,6 +16076,9 @@ body header nav #logoFlex .navbar-collapse {
 }
 body header nav #logoFlex .navbar-collapse .navbar-nav {
   margin-top: 20px;
+}
+body header nav #logoFlex .navbar-collapse .navbar-nav .nav-item #logo2 {
+  display: none;
 }
 body header nav #logoFlex .navbar-collapse .navbar-nav .nav-item a {
   text-transform: capitalize;
