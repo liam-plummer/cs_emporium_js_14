@@ -36,6 +36,27 @@ btn[2].addEventListener("click", () => {
     carbtns[3].style.border= "2px solid white"
 })
 
+// Boite connect 
+let connect = document.getElementsByClassName("box")[0]
+let diss1 = document.getElementsByClassName("diss1")[0]
+let diss = document.getElementsByClassName("diss")[0]
+diss.setAttribute("class", "diss d-none")
+diss1.setAttribute("class", "diss1 d-flex flex-column")
+btn[3].addEventListener("click", () => {
+    if (connect.style.display == "none") {
+        connect.style.display = "block"
+    } else {
+        connect.style.display = "none"
+    }
+})
+btn[4].addEventListener("click", () => {
+    diss1.setAttribute("class", "diss1 d-flex flex-column")
+    diss.setAttribute("class", "diss d-none")
+})
+btn[5].addEventListener("click", () => {
+    diss1.setAttribute("class", "diss1 d-none")
+    diss.setAttribute("class", "diss d-flex flex-column")
+})
 
 let carImgs = document.getElementsByClassName("carousel_pics")
 carImgs[0].style.opacity = "1"
@@ -71,14 +92,10 @@ carbtns[1].addEventListener("click", () => {
         carImgs[5].style.display = "block"
         carImgs[0].style.display = "none"
     }, 800);
-// } )
-// carbtns[3].addEventListener("click", () => {
-//     carImgs[2].style.display = "none"
-//     carImgs[6].style.display = "block"
-// })
+
 
 window.addEventListener("scroll", () => {
-    if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+    if (document.body.scrollTop >= 50 || document.documentElement.scrollTop >= 50) {
         nav.setAttribute("class", "navbar navbar-expand-lg navbar-light fixed-top")
         logo1.style.display = "none"
         logo2.setAttribute("class", "d-block")
@@ -88,3 +105,4 @@ window.addEventListener("scroll", () => {
         logo1.style.display = "block" 
     }
 })
+console.log(btn);

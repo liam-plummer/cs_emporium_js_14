@@ -16103,6 +16103,69 @@ body header nav #logoFlex .navbar-collapse .navbar-nav .nav-item #connect:focus 
 }
 body section:first-of-type {
   background-color: #f3f3f3;
+  height: 600px;
+}
+body section:first-of-type .box {
+  display: none;
+  position: absolute;
+  top: 25%;
+  left: 15%;
+  width: 75%;
+  z-index: 999;
+}
+body section:first-of-type .box .connect {
+  background-color: white;
+  border-radius: 10px;
+  height: 400px;
+  width: 900px;
+}
+body section:first-of-type .box .connect .logIn #signUp {
+  font-size: 35px;
+  background-color: white;
+  padding-bottom: 5px;
+  border: none;
+  border-bottom: 2px solid lightgrey;
+}
+body section:first-of-type .box .connect .logIn .diss1 input {
+  width: 400px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+body section:first-of-type .box .connect .logIn .diss1 #signBtn {
+  border: none;
+  width: 100px;
+  margin-bottom: 10px;
+}
+body section:first-of-type .box .connect .logIn .diss1 #google {
+  width: 400px;
+  border: none;
+}
+body section:first-of-type .box .connect .logIn .diss1 #facebook {
+  width: 400px;
+  border: none;
+  margin-top: 5px;
+}
+body section:first-of-type .box .connect .register #register {
+  font-size: 35px;
+  background-color: white;
+  padding-bottom: 5px;
+  border: none;
+  border-bottom: 2px solid lightgrey;
+  padding-top: 1px;
+}
+body section:first-of-type .box .connect .register .diss .d-flex {
+  margin-top: 36px;
+}
+body section:first-of-type .box .connect .register .diss .d-flex input {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+body section:first-of-type .box .connect .register .diss #regEmail {
+  width: 427px;
+}
+body section:first-of-type .box .connect .register .diss #regReg {
+  width: 427px;
+  border: none;
 }
 body section:nth-of-type(2) .container {
   margin-top: 50px;
