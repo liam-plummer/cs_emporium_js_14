@@ -5,6 +5,8 @@ let header = document.querySelector("header")
 let logo1 = document.getElementById("logo1")
 let logo2 = document.getElementById("logo2")
 let carbtns = document.getElementsByClassName("btns")
+let navbar = document.getElementsByTagName("nav")
+console.log(navbar);
 // let scrollTop = document.scrollTop()
 // bouton light mode
 btn[1].addEventListener("click", () => {
@@ -34,23 +36,6 @@ btn[2].addEventListener("click", () => {
     carbtns[3].style.border= "2px solid white"
 })
 
-// const getScrollTop = () => {
-//       var b = document.body; //IE 'quirks'
-//       var d = document.documentElement; //IE with doctype
-//       d = (d.clientHeight)? d : b;
-//       return d.scrollTop;
-// }
-
-// body.addEventListener("scroll", () => {
-//     if (d.scrollTop() >= 400) {
-//         header.style.position = "fixed"
-//         logo1.style.display = "none"
-//         logo1.style.display = "block"
-//     }   else {        
-//         logo1.style.display = "none"
-//         logo1.style.display = "block"
-//     }
-// })
 
 let carImgs = document.getElementsByClassName("carousel_pics")
 carImgs[0].style.opacity = "1"
@@ -91,3 +76,15 @@ carbtns[1].addEventListener("click", () => {
 //     carImgs[2].style.display = "none"
 //     carImgs[6].style.display = "block"
 // })
+
+window.addEventListener("scroll", () => {
+    if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+        nav.setAttribute("class", "navbar navbar-expand-lg navbar-light fixed-top")
+        logo1.style.display = "none"
+        logo2.setAttribute("class", "d-block")
+    } else {
+        nav.setAttribute("class", "navbar navbar-expand-lg navbar-light")
+        logo2.setAttribute("class", "d-none")
+        logo1.style.display = "block" 
+    }
+})
