@@ -53,7 +53,7 @@ btn[4].addEventListener("click", () => {
     diss1.setAttribute("class", "diss1 d-flex flex-column")
     diss.setAttribute("class", "diss d-none")
 })
-btn[8].addEventListener("click", () => {
+btn[5].addEventListener("click", () => {
     diss1.setAttribute("class", "diss1 d-none")
     diss.setAttribute("class", "diss d-flex flex-column")
 })
