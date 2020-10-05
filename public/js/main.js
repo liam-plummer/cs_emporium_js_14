@@ -7,7 +7,7 @@ let logo2 = document.getElementById("logo2")
 let carbtns = document.getElementsByClassName("btns")
 let navbar = document.getElementsByTagName("nav")
 console.log(navbar);
-// let scrollTop = document.scrollTop()
+
 // bouton light mode
 btn[1].addEventListener("click", () => {
     body.style.backgroundColor = "white"
@@ -105,4 +105,3 @@ window.addEventListener("scroll", () => {
         logo1.style.display = "block" 
     }
 })
-console.log(btn);

@@ -8,7 +8,6 @@ body
     background-color: white
     margin: 0
     header
-        // position: relative
         nav
             background-color: white
             #logoFlex
@@ -158,13 +157,14 @@ body
                                     z-index: 1
                                     // height: 50px
                                     width: 115px
-                                    animation: 2s  liam normal forwards 1 ease-in
+                                    animation: 1s  liam normal forwards ease-in
                                     @keyframes liam 
                                         from 
                                             bottom: 25.5%
                                             height: 0px
                                         to
-                                            height: 62.5px  
+                                            bottom: 25.5%
+                                            height: 50px  
                                 &:hover::after
                                     content: "Test"
                                     background-color: blue
@@ -174,14 +174,14 @@ body
                                     left: 120px
                                     // height: 50px
                                     width: 115px
-                                    animation: 2s  liam2 normal forwards 1 ease-in
+                                    animation: 1s  liam2 normal forwards ease-in
                                     @keyframes liam2
                                         from 
                                             bottom: 25.5%
                                             height: 0px
                                         to
-                                            // bottom: 40%
-                                            height: 62.5px  
+                                            bottom: 25.5%
+                                            height: 50px  
                                 &:hover
                                     img
                                         // transition: all 2s
@@ -278,7 +278,37 @@ body
                     li
                         color: white 
 
-
+@media (max-width:  768px)
+    body
+        section
+            &:first-of-type
+                .container
+                    left: 25%
+                    right: 25%
+                
+            &:nth-of-type(2)
+                .container
+                    margin-left: 27%
+                    margin-right: 25%
+                    .row
+                        .blogItem
+                            .centered
+                                top: 15%
+                                left: 25%
+                                padding: 5px
+                                padding-bottom: 5px
+                                transform: translate(-15%, -15%)
+            &:nth-of-type(3)
+                .container
+                    margin-left: 27%
+                    margin-right: 25%
+                    // align-items: center
+            &:nth-of-type(4)
+                // width: 80%
+                #banner2
+                    margin-top: 25%
+                    font-size: 20px
+            
             
             
             
